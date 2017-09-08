@@ -1,0 +1,63 @@
+/**index.wxss**/
+/*.rabit{
+  width: 150px;
+  height: 250px;
+}*/
+.back{
+  height:1250rpx;
+}
+.music_box{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 10;
+}
+.rabit{
+  width: 104px;
+  height: 158px;
+}
+.bling_do{
+  position: absolute;
+}
+.lover{
+  width: 32px;
+  height: 32px;
+  z-index: 1
+}
+.musi{
+  width: 30px;
+  height: 25px;
+}
+.photo_box{
+  width:488rpx;
+  height:700rpx;
+  z-index: 2;
+}
+.photo_box image{
+  width: 488rpx;height: 700rpx;
+}
+.app_bottom{
+  position: absolute;
+  bottom: 20rpx;
+  width:750rpx;
+  padding: 0 10rpx;
+}
+.app_bottom button{
+  color: #fff;
+  text-align: center;
+  background-color:rgba(0,0,0,0.3);
+  border-radius:6rpx;
+  display: inline-block;
+  font-size:14px;
+  line-height: 60rpx;
+  height: 60rpx;
+  padding: 0 27.5rpx;
+  margin: 0 35rpx;
+  font-weight: 300;
+}
+.ele-container{
+  position:absolute;
+  top: 0;
+  width: 750rpx;
+  overflow:hidden;
+}

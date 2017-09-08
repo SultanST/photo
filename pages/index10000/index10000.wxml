@@ -1,0 +1,13 @@
+<view class ="app back">
+    <view class="logo">
+    <image src="{{userInfo.avatarUrl||'../../images/log.png'}}" class='log'></image>
+    </view>
+    <view class="foundphoto">
+        <button type="primary" bindtap="foundphoto">创建个人相册</button>
+    </view>  
+    <view class="managephoto">
+        <block wx:if="{{real_value}}">
+        <button type="default" bindtap="navphoto">相册管理</button>
+        </block>
+    </view>
+</view>

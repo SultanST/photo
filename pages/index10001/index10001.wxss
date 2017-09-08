@@ -1,0 +1,18 @@
+.tex text{
+    font-weight: normal;
+    font-size: 14px;
+}
+.nexttep button{
+      width: 730rpx;
+}
+.showphoto{
+   width: 730rpx;
+}
+.showphoto view{
+    float: left;
+    margin:10px 15px 10px 0px;
+}
+.photolist{
+    width: 55px;
+    height: 55px;
+}

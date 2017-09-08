@@ -1,0 +1,76 @@
+<!--index.wxml-->
+<view class ="app back" style="{{rabit.background_img}}">
+<view class = "music_box" bindtap="pausemusi">
+    <image src="../../images/musi.png" class="musi rotation" style="{{rotation}}"></image>
+  </view>
+  <view>
+  <audio src="{{rabit.src}}" id="myAudio" loop></audio>  
+  </view>
+  <view style="{{overflow}}">
+    <view class = "photo_box {{iframe.iframe_style1}}" style="{{pbox_style}}">
+      <image src="{{photo[photo_right]}}"></image>
+    </view>
+  </view>
+  <view class = "rabit_box" style="{{rabit.rabit_position[0]}}">
+    <image src="{{rabit.rabit_box}}" class="swing1" style="{{rabit.rabit_position[1]}}"></image>
+  </view>
+<template name="bling">
+  <view class="bling_do" style="{{style}}" data-event-params="{{data.eventParams}}" catchtap="{{data.eventHandler}}">
+  <image src="{{data.lover_src}}" class="lover {{data.love_style}}"></image>
+  </view>
+</template>
+<view class="ele-container">
+<block wx:if='{{bling_box==1}}'>
+ <view wx:for="{{[1,2,3,4]}}" wx:for-item="i">
+  <view wx:for="{{[1,2,3,4]}}" wx:for-item="j">
+    <view style="top: {{ i + (i*120 - j*30)}}px;left: {{i*13*j}}px;position:absolute">
+  <template is="bling" data="{{data:bling, userInfo: userInfo}}"></template>
+    </view>
+   </view>
+ </view>
+ <view wx:for="{{[1,2,3,4]}}" wx:for-item="i">
+  <view wx:for="{{[1,2,3,4]}}" wx:for-item="j">
+    <view style="bottom: {{ i + (i*150 - j*20)}}px;right: {{i*15*j}}px;position:absolute">
+  <template is="bling" data="{{data:bling, userInfo: userInfo}}"></template>
+    </view>
+   </view>
+  </view>
+  </block>
+</view>
+<view class="ele-container">
+<block wx:if='{{bling_box==2}}'>
+ <view wx:for="{{[1,2]}}" wx:for-item="i">
+  <view wx:for="{{[1,2]}}" wx:for-item="j">
+    <view style="top: {{i+ (i*50 - j*5)}}rpx;left: {{i*160*j}}rpx;position:absolute;">
+  <template is="bling" data="{{data:bling, userInfo: userInfo}}"></template>
+    </view>
+   </view>
+  </view>
+  <view wx:for="{{[1,2]}}" wx:for-item="i">
+  <view wx:for="{{[1,2]}}" wx:for-item="j">
+    <view style="top: -{{i*10 - j*1}}rpx;left: {{i*130*j}}rpx;position:absolute;">
+  <template is="bling" data="{{data:bling2, userInfo: userInfo}}"></template>
+    </view>
+   </view>
+  </view>
+  </block>
+</view>
+<view class="ele-container">
+  <block wx:if='{{bling_box==3}}'>
+    <view wx:for="{{[1,2]}}" wx:for-item="i">
+      <view wx:for="{{[1,2]}}" wx:for-item="j">
+        <view style="bottom: {{i+ (i*150 - j*5)}}rpx;right: {{i*160*j}}rpx;position:absolute">
+      <template is="bling" data="{{data:bling, userInfo: userInfo}}"></template>
+        </view>
+      </view>
+    </view>
+  </block>
+</view> 
+  
+  <view class = "app_bottom">
+    <button plain="true" bindtap="navtomodel">模板</button>
+    <button plain="true" bindtap="navtomusic">音乐</button>
+    <button plain="true" bindtap="navtophoto">加图</button>
+    <button plain="true" bindtap="navtokeep">保存</button>
+  </view>
+</view>

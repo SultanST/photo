@@ -1,0 +1,23 @@
+<view class ="app back">
+    <view class="tex">
+    <input placeholder="标题(50字以内)" auto-focus placeholder-class="tex_ph"/>
+    <textarea  placeholder="　相册简介(100字以内)" placeholder-class="textarea_ph"/>
+    </view>
+    <view class='addphoto'>
+      <button type="default" bindtap="chooseImage">添加图片</button>
+    </view>
+    <view class="showphoto">
+     <view wx:for="{{photoadd}}" wx:for-item="i">
+       <image src="{{[i]}}" class="photolist"></image>
+        <input placeholder="相片标题(20字以内)"/>
+        <view>
+        <image src="../../images/bling.png" class='ico' bindtap='dele'></image>
+        <image src="../../images/bling.png" class='ico' bindtap='upda'></image>
+        <image src="../../images/bling.png" class='ico' bindtap='down'></image>
+        </view>
+     </view>
+    </view>  
+    <view class="nexttep">
+        <button type="primary" data-hi='index10000' bindtap="gonext">下一步</button>
+    </view>
+</view>

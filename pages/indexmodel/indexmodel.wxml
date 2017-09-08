@@ -1,0 +1,27 @@
+<view class="app">
+
+<template name="zcPicture">
+    <view class="element picture"  data-event-params="{{data.eventParams}}" catchtap="{{data.eventHandler}}">
+      <!--<image src="{{data.content}}"></image>-->
+      <view class="Textimg" style='background-image:url({{data.content}})'>
+        <text class ="Textimg_t">{{data.name}}</text>
+      </view>
+    </view>
+</template>
+<!--<template name="zcText">
+    <text class="element text" style="{{data.style}}" data-event-params="{{data.eventParams}}" catchtap="{{data.eventHandler}}">{{data.content}}</text>
+</template>-->
+<template name="zcFreeVessel4">
+  <view class="element free-vessel" style="{{data.style}}"  data-event-params="{{data.eventParams}}" catchtap="{{data.eventHandler}}">
+  <view class="ele-container">
+    <block wx:for="{{data.content}}">
+        <template is="zcPicture" data="{{data:item, detail_data: detail_data}}"></template>
+    </block>
+  </view>
+  </view>
+</template>
+
+<view class="ele-container">
+  <template is="zcFreeVessel4" data="{{data:free_vessel4, real_value:item, detail_data: detail_data}}"></template>
+</view>
+</view>

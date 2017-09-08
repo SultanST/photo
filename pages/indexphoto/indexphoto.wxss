@@ -1,0 +1,31 @@
+.picture{opacity:1;line-height:58.59375rpx;background-color:#fff;border-color:rgb(34, 34, 34);border-style:none;height:400rpx;width:750rpx;position: float; display: inline-block;}
+.Textimg{
+  height:320rpx;width:730rpx;position: relative; background-size: 730rpx 320rpx;background-repeat:no-repeat;background-color: #fff;
+margin: 10rpx}
+.Textimg_t{
+    position: absolute;
+    bottom: 0;
+    height: 30rpx;
+    line-height: 30rpx;
+    background:rgba(0, 0, 0, 0.2);
+    width:730rpx;
+    text-align:center;
+    font-size:13px;
+    color: #fff
+}
+.Textimg_tt{
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 50rpx;
+    line-height: 50rpx;
+    background:rgba(0, 0, 0, 0.2);
+    width:150rpx;
+    text-align:center;
+    font-size:24rpx;
+    color: #333
+}
+.free-vessel{background-color:rgba(0, 0, 0, 0.1);margin:auto;}
+.textimg_bottom{width:730rpx;position: relative;background-color: #fff;margin: auto;}
+.textimg_bottom text{ float:left; height:50rpx; line-height: 50rpx;width:450rpx;font-size:14px;}
+.textimg_bottom button{ float:right; height:50rpx; line-height: 50rpx;width:115rpx; text-align:center;font-size:13px;}

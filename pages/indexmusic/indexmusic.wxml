@@ -1,0 +1,17 @@
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+</view>   
+<!--热门-->  
+<view>
+  <view wx:for="{{musicitem.hot}}" data-idx="{{item.id}}" class='musci_item' bindtap="choosemusic">
+   <icon type='circle' color="orange" size="14"></icon>
+   <text>{{item.music_name}}</text>
+ </view>
+</view>  
+<!--流行-->  
+<!--<view hidden="{{currentTab!==1}}">
+  <view wx:for="{{musicitem.hot}}" data-idx="{{item.id}}" class='musci_item' bindtap="choosemusic">
+   <icon type='circle' color="orange" size="14"></icon>
+   <text>{{item.music_name}}</text>
+ </view>
+</view>   --> 

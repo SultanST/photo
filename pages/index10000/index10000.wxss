@@ -1,0 +1,17 @@
+/* pages/index10000/index10000.wxss */
+.logo{
+    height: 64px;
+    width:730rpx;
+    margin: 70px 10px;
+    text-align: center;
+}
+.log{
+    width: 64px;
+    height: 64px;
+}
+.managephoto{
+    margin: 10px 10px;
+}
+.foundphoto{
+    margin: 170px 10px 0px;
+}

@@ -1,0 +1,16 @@
+.picture{opacity:1;line-height:58.59375rpx;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:220rpx;width:220rpx;position: float; display: inline-block;margin-left:20rpx;}
+.Textimg{
+  height:220rpx;width:220rpx;position: relative; background-size: 220rpx 220rpx;background-repeat:no-repeat;background-color: #fff;
+}
+.Textimg_t{
+    position: absolute;
+    bottom: 0;
+    height: 30rpx;
+    line-height: 30rpx;
+    background:rgba(0, 0, 0, 0.5);
+    width:220rpx;
+    text-align:center;
+    font-size:13px;
+    color: #fff
+}
+.free-vessel{background-color:rgb(255, 255, 255);margin:auto;}

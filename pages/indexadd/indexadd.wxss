@@ -1,0 +1,43 @@
+.tex text{
+    font-weight: normal;
+    font-size: 14px;
+}
+.tex input{
+    height: 20px;
+    margin: 10px;
+    background-color: #f7f7f7;
+    width: 690rpx
+}
+.tex textarea{
+    height: 80px;
+    margin: 10px;
+    background-color: #f7f7f7;
+    width: 690rpx
+}
+.tex_ph{
+    margin-left: 10px;
+    font-size: 13px;
+}
+.textarea_ph{
+    font-size: 13px; 
+}
+.addphoto button{
+  width: 690rpx;
+  border: 1px #1DDA19 solid;
+  color: #1DDA19;
+  background-color: #fff;
+}
+.nexttep button{
+      width: 690rpx;
+}
+.showphoto{
+   width: 690rpx;
+}
+.showphoto view{
+    float: left;
+    margin:10px 15px 10px 0px;
+}
+.photolist{
+    width: 55px;
+    height: 55px;
+}
